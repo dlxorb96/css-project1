@@ -93,12 +93,17 @@ body {
   position: relative;
   z-index: 10;
   padding: 20px 40px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .box .content h2 {
   font-size: 2em;
   color: #fff;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .box .content p {
@@ -115,4 +120,5 @@ body {
   padding: 10px;
   text-decoration: none;
   font-weight: 700;
+  width: 100px
 }
