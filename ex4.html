@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex4.css">
+    <script src="https://use.fontawesome.com/releases/v5.6.0/js/all.js"></script>
+    <title>navbar</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">LOGO</a>
+        <div id="toggle"></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Team">Team</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+<section id="home">home</section>
+<section id="About">About</section>
+<section id="Service">Service</section>
+<section id="Team">Team</section>
+<section id="Portfolio">Portfolio</section>
+<section id="Contact">Contact</section>
+
+    <script>
+        const header = document.getElementById('header')
+        const toggle = document.getElementById('toggle');
+        const navbar = document.getElementById('navbar');
+
+        document.onclick = function(e){
+            if(e.target.id !== 'header' && e.target.id !== 'toggle' 
+            && e.target.id !== 'navbar'){
+                toggle.classList.remove('active');
+                navbar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+    </script>
+    <div class="letter">
+    </div>
+</body>
+</html>
