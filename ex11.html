@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More or Less More using Javascript</title>
+    <link rel="stylesheet" href="ex11.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="desktop.png">
+            </div>
+            <div class="content">
+                <h3>Web & Mobile Development</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas assumenda ipsum necessitatibus facilis earum? Qui officia molestiae id nobis, rem et ab dolore a, rerum ullam neque, quibusdam laudantium?
+                    Vitae fugit, accusantium dignissimos nemo hic obcaecati quas nam eos cupiditate corrupti debitis ipsam vel quasi laborum vero blanditiis expedita assumenda adipisci voluptatibus tempora, odit error reprehenderit maiores. Delectus, corporis?
+                    Sequi sapiente adipi 
+                </p>
+            </div>
+            <a class="more"></a>
+        </div>
+        
+        <div class="card">
+            <div class="icon">
+                <img src="support.png">
+            </div>
+            <div class="content">
+                <h3>Customer Support</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas assumenda ipsum necessitatibus facilis earum? Qui officia molestiae id nobis, rem et ab dolore a, rerum ullam neque, quibusdam laudantium?
+                    Vitae fugit, accusantiessitatibus culpa similique fuga harum temporibus omnis nihil magnam! Delectus nihil inventore totam! Animi nesciunt in, dolorem tempora, cupiditate veniam commodi, aliquid quod excepturi ipsa eaque dolor corporis.
+                    Consequuntur eveniet suscipit numquam doloribus neque voluptate esse quo excepturi velit alias, ea nisi debitis quae. Recusandae libero blanditiis natus alias aut consectetur laudantium, tempore minima animi cumque, numquam autem?
+                </p>
+            </div>
+            <a class="more"></a>
+        </div>
+        
+        <div class="card">
+            <div class="icon">
+                <img src="bullhorn.png">
+            </div>
+            <div class="content">
+                <h3>Marketing & Communication</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas assumenda ipsum necessitatibus facilis earum? Qui officia molestiae id nobis, rem et ab dolore a, rerum ullam neque, quibusdam laudantium?
+                    Vitae fugit, accusantium dignissimos nemo hic obcaecati quas nam eos cupiditate corrupti debitis ipsam vel quasi laborum vero blanditiis expedita assumenda adipisci voluptatibus tempora, odit error reprehenderit maiores. Delectus, corporis?
+                    Sequi sapiente adt s
+                </p>
+            </div>
+            <a class="more"></a>
+        </div>
+    </div>
+
+    <script>
+        let more = document.querySelectorAll('.more');
+        for(let i =0; i<more.length; i++){
+            more[i].addEventListener('click', function(){
+                more[i].parentNode.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
